@@ -1,5 +1,7 @@
-
-
+def add(a,b):
+    c=a+b
+    print(c)
+'''
 fruits = ['orange', 'apple', 'pear']
 fruits1=['banana', 'kiwi', 'apple', 'banana']
 
@@ -42,4 +44,4 @@ print("clear function : ",fruits2)
 
 for x in fruits:
     print(x)
-
+'''
