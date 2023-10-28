@@ -1,0 +1,11 @@
+class a:
+ def question(self,a,b):
+    self.first=a
+    self.second=b
+    print(self.first+self.second)
+
+ascaf=a()
+ascaf.question(12,34)
+
+karthik=a()
+karthik.question(56,78)
