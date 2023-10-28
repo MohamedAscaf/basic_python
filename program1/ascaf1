@@ -1,0 +1,9 @@
+print("the python")
+print("welcome" , "to" , "the" , "world")
+
+'''
+print("hello" , end = "\t")
+print("good morning")
+'''
+
+print("hello world" , end= " yes its ended")
