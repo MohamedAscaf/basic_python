@@ -1,0 +1,427 @@
+""" import tkinter
+t=tkinter.Tk()
+t.mainloop()"""
+
+
+
+""" from tkinter import *
+root=Tk()
+frame=Frame(root)
+frame.pack()
+root.mainloop()
+ """
+
+
+#example
+""" from tkinter import *
+root=Tk()
+frame=Frame(root,bg="orange",width=200,height=100)
+frame.pack()
+frame1=Frame(root,bg="white",width=200,height=100)
+frame1.pack()
+frame2=Frame(root,bg="green",width=200,height=100)
+frame2.pack()
+root.mainloop() """
+
+
+
+""" from tkinter import *
+root=Tk()
+frame=Frame(root,bg="blue",width=200,height=100)
+frame.pack()
+frame1=Frame(root,bg="white",width=200,height=100)
+frame1.pack()
+frame2=Frame(root,bg="red",width=200,height=100)
+frame2.pack()
+root.mainloop() """
+
+
+
+""" from tkinter import *
+root=Tk()
+frame=Frame(root,bg="green",width=200,height=100)
+frame.pack()
+
+root.mainloop() """
+
+
+
+#example
+""" import tkinter
+from tkinter import messagebox
+top=tkinter.Tk()
+def Hello():
+    tkinter.messagebox.showinfo("Hellow Python","LiveWire")
+b=tkinter.Button(top,text="Hello",command=Hello,activebackground="blue")
+b.pack()
+top.mainloop() """
+
+
+
+""" from tkinter import *
+from PIL import ImageTk,Image
+from tkinter import ttk
+
+win=Tk()
+win.geometry("500x500")
+frame=Frame(win,width=100,height=100)
+frame.pack()
+frame.place(relx=0.01,rely=0.01)
+
+img=ImageTk.PhotoImage(Image.open("apj.jpg"))
+img1=img
+label=Label(frame,image=img)
+label.pack()
+
+win.mainloop() """
+
+
+
+#example
+""" from tkinter import *
+from PIL import ImageTk,Image
+from tkinter import ttk 
+
+win=Tk()
+win.geometry("500x500")
+frame=Frame(win,width=100,height=100)
+frame.pack()
+frame.place(relx=0.01,rely=0.01)
+image=ImageTk.PhotoImage(Image.open("jw1.jpg"))
+label=Label(frame,image=image)
+label.pack()
+
+frame1=Frame(win,width=100,height=100)
+frame1.pack()
+frame1.place(relx=0.2,rely=-0.3)
+image=ImageTk.PhotoImage(Image.open("jw2.jpg"))
+label=Label(frame1,image=image)
+label.pack()
+image=ImageTk.PhotoImage(Image.open("jw1.jpg"))
+label=Label(frame1,image=image)
+label.pack()
+
+win.mainloop()
+ """
+
+
+
+
+""" from tkinter import *
+root = Tk()
+for fm in ['orange','white','green','blue','white','black']:
+    Frame(height = 20,width = 640,bg = fm).pack()
+root.mainloop() """
+
+
+
+
+""" from tkinter import *
+r=Tk()
+r.geometry("400x400")
+#
+l1=Label(r,text="Enter the First Value")
+l1.grid(row=0,column=1)
+l2=Label(r,text="Enter the Second Value")
+l2.grid(row=1,column=1)
+l3=Label(r,text="Result")
+l3.grid(row=2,column=1)
+
+e1=Entry(r)
+e1.grid(row=0,column=2)
+e2=Entry(r)
+e2.grid(row=1,column=2)
+e3=Entry(r)
+e3.grid(row=2,column=2)
+#
+def add():
+    a=int(e1.get())
+    b=int(e2.get())
+    c=a+b
+    e3.insert(0,c)
+b=Button(r,text="Add",command=lambda:add())
+b.grid(row=3,column=3)
+r.mainloop() """
+
+
+
+
+#example 
+"""  
+from tkinter import *
+root = Tk()
+for a in ['red' , 'orange' , 'yellow' , 'green' , 'blue' , 'indigo' , 'violet']:
+    Frame(height = 25,width = 660,bg = a).pack()
+root.mainloop() """
+
+
+
+""" from tkinter import *
+a = Tk()
+a.geometry("400x400")
+
+m1 = Label(a,text="Enter the First Value")
+m1.grid(row=0,column=1)
+m2 = Label(a,text="Enter The Second Value")
+m2.grid(row=1,column=1)
+m3 = Label(a,text="Result")
+m3.grid(row=2,column=1)
+
+n1=Entry(a)
+n1.grid(row=0,column=2)
+n2=Entry(a)
+n2.grid(row=1,column=2)
+n3=Entry(a)
+n3.grid(row=2,column=2)
+
+def sub():
+    a=int(n1.get())
+    b=int(n2.get())
+    c=a-b
+    n3.insert(0,c)
+
+b=Button(a,text="sub" , activebackground="blue" , command = lambda:sub())
+b.grid(row=3 , column=3)
+
+a.mainloop() """
+
+
+
+
+""" from tkinter import *
+a = Tk()
+a.geometry("400x400")
+
+o1 = Label(a,text="Enter The First Value")
+o1.grid(row=0,column=1)
+o2 = Label(a,text="Enter The Second Value")
+o2.grid(row=1,column=1)
+o3 = Label(a,text="Result")
+o3.grid(row=2,column=1)
+
+p1 = Entry(a)
+p1.grid(row=0,column=2)
+p2 = Entry(a)
+p2.grid(row=1,column=2)
+p3 = Entry(a)
+p3.grid(row=2,column=2)
+
+def mul():
+    a=int(p1.get())
+    b=int(p2.get())
+    c=a*b
+    p3.insert(0,c)
+
+b=Button(a,text="mul" , activebackground="blue" , command = lambda:mul())
+b.grid(row=3 , column=3)
+
+a.mainloop()"""
+
+
+
+
+""" from tkinter import *
+a = Tk()
+a.geometry("500x500")
+
+U1 = Label(a,text="Enter the First Value")
+U1.grid(row=0,column=1)
+U2 = Label(a,text="Enter The Value")
+U2.grid(row=1,column=1)
+U3 = Label(a,text="result")
+U3.grid(row=2,column=1)
+
+V1 = Entry(a)
+V1.grid(row=0,column=2)
+V2 = Entry(a)
+V2.grid(row=1,column=2)
+V3 = Entry(a)
+V3.grid(row=2,column=2)
+
+def div():
+    a=int(V1.get())
+    b=int(V2.get())
+    c=a/b
+    V3.insert(0,c)
+
+b=Button(a,text="div" , activebackground="blue" , command = lambda:div())                             
+b.grid(row=3 , column=3)
+
+a.mainloop() """
+
+
+
+
+""" 
+from tkinter import *
+a = Tk()
+a.geometry("500x500")
+
+I1 = Label(a,text="Enter the First Value")
+I1.grid(row=0,column=1)
+I2 = Label(a,text="Enter The Second Value")
+I2.grid(row=1,column=1)
+I3 = Label(a,text="result")
+I3.grid(row=2,column=1)
+
+L1 = Entry(a)
+L1.grid(row=0,column=2)
+L2 = Entry(a)
+L2.grid(row=1,column=2)
+L3 = Entry(a)
+L3.grid(row=2,column=2)
+
+def add():
+    a=int(L1.get())
+    b=int(L2.get())
+    c=a+b
+    L3.insert(0,c)
+
+def sub():
+    a=int(L1.get())
+    b=int(L2.get())
+    c=a-b
+    L3.insert(0,c)
+
+def mul():
+    a=int(L1.get())
+    b=int(L2.get())
+    c=a*b
+    L3.insert(0,c)
+
+def div():
+    a=int(L1.get())
+    b=int(L2.get())
+    c=a/b
+    L3.insert(0,c)      
+
+b=Button(a,text="add" , activebackground="green" , command = lambda:add())                             
+b.grid(row=4 , column=1)
+
+b=Button(a,text="sub" , activebackground="blue" , command = lambda:sub())                             
+b.grid(row=4 , column=2)
+
+b=Button(a,text="mul" , activebackground="yellow" , command = lambda:mul())                             
+b.grid(row=4 , column=3)
+
+b=Button(a,text="div" , activebackground="pink" , command = lambda:div())                             
+b.grid(row=4 , column=4)
+
+a.mainloop()
+
+ """
+
+
+
+""" from tkinter import *
+
+def onclick():
+   pass
+
+root = Tk()
+text = Text(root,height=2, width=30)
+text.insert(INSERT, "Hello.....")
+text.insert(END, "Bye Bye.....")
+text.pack()
+b=Button(root,text="submit")
+b.pack()
+text.tag_add("here", "1.0", "1.4")
+text.tag_add("start", "1.8", "1.13")
+text.tag_config("here", background="orange", foreground="blue")
+text.tag_config("start", background="black", foreground="green")
+root.mainloop() """
+
+
+
+#example
+""" from tkinter import *
+
+def onclick():
+   pass
+root = Tk()
+text = Text(root,height=5, width=30)
+text.insert(INSERT, "HEllo.....")
+text.insert(INSERT, "Bye.....")
+text.insert(END, "Bye  ......")
+
+text.pack()
+b=Button(root,text="Submit")
+b.pack()
+
+text.tag_add("here", "1.0" , "1.5")
+text.tag_add("her", "1.18" , "1.21")
+
+text.tag_config("here", background="orange", foreground="blue")
+text.tag_config("her", background="green", foreground="blue")
+root.mainloop() """
+
+
+
+""" from tkinter import *
+from tkinter import ttk
+root = Tk()
+root.title("Combobox Example")
+root.geometry('300x300')
+combo = ttk.Combobox(root, values=["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"])
+combo.pack()
+
+def option_selected(event):
+   selected_option = combo.get()
+   print("You selected:", selected_option)
+combo.bind("<<ComboboxSelected>>", option_selected)
+root.mainloop()
+ """
+
+
+
+#example
+""" from tkinter import *
+from tkinter import ttk
+root = Tk()
+root.title("combobox Example")
+root.geometry('500x500')
+combo = ttk.Combobox(root,  values=["computer 1", "Computer 2", "Computer 3", "Computer 4", "Computer 5"])
+combo.pack()
+def option_selected(event):
+    selected_option  = combo.get()
+    print("You selected", selected_option)
+combo.bind("<<ComboboxSelected>>", option_selected)
+root.mainloop() """
+
+
+
+
+""" from tkinter import *
+
+root = Tk()
+var = IntVar()
+
+R1 = Radiobutton(root, text="Option 1", variable=var, value=1)
+R1.pack(anchor=W)
+
+R2 = Radiobutton(root, text="Option 2", variable=var, value=2)
+R2.pack(anchor=W)
+
+R3 = Radiobutton(root, text="Option 3", variable=var, value=3)
+R3.pack(anchor=W)
+
+root.mainloop() """
+
+
+
+
+""" from tkinter import *
+root = Tk()
+a = IntVar()
+
+R1 = Radiobutton(root , text="Male" , variable=a , value=1)
+R1.pack(anchor=W)
+
+R2 = Radiobutton(root , text="Female" , variable=a , value=2)
+R2.pack(anchor=W)
+
+R3 = Radiobutton(root , text="Trans" , variable=a , value=3)
+R3.pack(anchor=W)
+
+
+root.mainloop() """

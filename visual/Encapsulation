@@ -1,0 +1,186 @@
+#Encapsulation
+'''
+class abc:
+    def __init__(self,x):
+        self.x =x
+    def getter(self):
+        print(self.x)
+    def setter(self,x):
+        self.x=x
+
+a=abc(45)
+a.getter()
+a.setter(78)
+a.getter()
+
+'''
+
+
+'''
+class abc:
+    def __init__(self,a):
+        self.a=a
+    def purchace(self):
+        print(self.a)
+    def giving(self,a):
+        self.a=a
+
+x=abc(12)
+x.purchace()
+x.giving(34)
+x.purchace()
+'''
+
+
+"""
+class Students:
+    def __init__(self,Name,Rank,Points):
+        self.name=Name
+        self.rank=Rank
+        self.points=Points
+                                                                                                           
+    def Demofunc(self):
+      print("I Am" + self.name)
+      print("I Got Rank" , self.rank)
+
+st1 = Students(" Steve" , 1 , 100)
+st2 = Students(" Cheis" , 2 , 90)
+st3 = Students(" Mark" , 3 , 70)
+st4 = Students(" Kate" , 4 , 60)
+st1.Demofunc()
+st2.Demofunc()
+st3.Demofunc()
+st4.Demofunc()
+"""
+
+
+""" class Students:
+    def __init__(self,Name,Rank,Point):
+        self.name=(Name)
+        self.rank=(Rank)
+        self.point=(Point)
+    def Demofunc(self):
+        print("I Am " + self.name)
+        print("I Got Rank" , self.rank)
+st1 = Students("jack" , 1 , 100)
+st2 = Students("peter" , 2 , 90)
+st3 = Students("harry" , 3 , 70)
+st4 = Students("david" , 4 , 50)
+st1.Demofunc()
+st2.Demofunc()
+st3.Demofunc()
+st4.Demofunc() """
+
+
+
+'''
+class Employee:                                                 
+    def __init__(self,Name,Id,Salary,Project):
+        self.name=Name
+        self.id=Id
+        self.salary=Salary
+        self.project=Project
+
+    def show_sal(self):
+        print("Name:" , self.name , "Salary:" , self.salary)
+
+    def proj(self):
+        print(self.name , "Is Working On" , self.project)
+
+Emp = Employee("Jack" , 100 , 100000 , "python")
+
+Emp.show_sal()
+Emp.proj()
+'''
+
+
+
+""" 
+class Employee:
+    def __init__(self,Name,Id,Salary,Project):
+        self.name=Name
+        self.id=Id
+        self.salary=Salary
+        self.project=Project
+
+    def show_sal(self):
+        print("Name:" , self.name , "Salary:" , self.salary)
+
+    def proj(self):
+        print(self.name , "Is Working On" , self.project)
+Emp = Employee("Jack" , 100 , 10000 , "Backend")
+Emp.show_sal()
+Emp.proj() """
+
+
+
+"""
+class Base:
+    def __init__(self):
+        self.a=2
+
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+        print("Calling Base Class:" , self.a)
+
+        self.a=3
+        print("Calling Modified Base Class:" , self.a)
+obj1= Derived()
+obj2= Base()
+
+print("Accessing protected obj1:" , obj1.a)
+print("Accessing Protected obj2:" , obj2.a)
+"""
+
+
+
+""" class Base:
+    def __init__(self):
+        self.x=2
+
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+        print("Calling Base Class:" , self.x)
+
+        self.x=5
+        print("Calling modified Base Class:" , self.x)
+
+Oj1 = Derived()
+Oj2 = Base()
+
+print("Accessing Protected Oj1:" , Oj1.x)
+print("Accessing protected Oj2:" , Oj2.x)"""
+
+
+
+""" class Base:
+    def __init__(self):
+        self.x = "Geeks For Geeks"
+        self.y = "Creek For Creek"
+
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+        print("Calling Private Member Of Base Class:")
+        print(self.x)
+        print(self.y)
+
+Obj = Derived() """
+
+
+
+""" class base:
+    def __init__(self):
+        self.a = "John Wick"
+        self.b = "The Ghost"
+
+class Derived(base):
+    def __init__(self):
+        base.__init__(self)
+        print("Calling The He Is Always Ghost:")
+        print(self.a)
+        print(self.b)
+
+Obj = Derived() """
